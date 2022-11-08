@@ -4,6 +4,19 @@
 
 -   Golang `>1.19`
 
+## Prepare Environment
+
+```
+cp .envrc.tmpl .envrc
+# edit .envrc to properly set each value
+```
+
+## Testing
+
+```
+go test ./...
+```
+
 ## Running
 
 To get started simply run the following
