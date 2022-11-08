@@ -26,6 +26,10 @@ func main() {
 	}
 
 	dbPath := os.Getenv("DB_PATH")
+	if dbPath == "" {
+		fmt.Println("DB_PATH not set")
+		os.Exit(1)
+	}
 
 	// setup client for redsky api
 	client := api.NewClient(clientAddr, clientSecret)
